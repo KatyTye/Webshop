@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>VoltageX - søg</title>
+</head>
+
+<body>
+    <header class="header">
+        <ul class="returnPolicy">
+            <li><a href="#"><img src="/images/icons/free-delivery.svg" alt="fri retur">
+                    <p>Fri retur</p>
+                </a></li>
+            <li><a href="#"><img src="/images/icons/free-delivery.svg" alt="gratis fragt">
+                    <p>Fri fragt med køb over 1000,-</p>
+                </a></li>
+        </ul>
+        <nav class="navBar">
+            <section class="logo">
+                <img src="/images/logoConcept.png" alt="logo">
+            </section>
+            <section class="search">
+                <form action="" id="search">
+                    <input type="search" name="search">
+                    <button>submit</button>
+                </form>
+            </section>
+            <section class="navBtns">
+                <a href="#">
+                    <figure class="signUp">
+                        <img src="./images/icons/user-add.svg" alt="Sign up logo">
+                        <figcaption>Bliv medlem</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="login">
+                        <img src="/images/icons/user.svg" alt="Login logo">
+                        <figcaption>Login</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="cart">
+                        <img src="/images/icons/shopping-cart.svg" alt="Kurv logo">
+                        <figcaption>Kurv</figcaption>
+                    </figure>
+                </a>
+            </section>
+        </nav>
+        <ul class="navLinks">
+            <!-- Disse links tager kunden til search, med de forskellige filtre so fx søg.html#gaming etc -->
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Gaming</a></li>
+            <li><a href="#">Vores pc'er</a></li>
+            <li><a href="#">Mobil</a></li>
+        </ul>
+    </header>
+    <section class="searchFilters">
+        <p>Filtre</p><button>Nulstil</button>
+    <form action="">
+        <p>Kategori</p>
+        <!-- generate kategorier her med js -->
+    </form>
+    <form action="">
+        <p>Pris</p>
+        <input type="range" id="price" name="price" min="0" max="100000" value="90" step="10" />
+    </form>
+    </section>
+
+    <section class="searchResults">
+        <form action="">
+            <p>Sorter efter:</p>
+            <select id="sort" name="sorter">
+                <option value="pris aftagende">pris aftagende</option>
+                <option value="pris opstigende">pris opstigende</option>
+                <option value="navn">navn</option>
+                <option value="tilbud">tilbud</option>
+        </form>
+
+        <ul>
+            <!-- generate resultater med js baseret på hvad brugeren søgte efter -->
+        </ul>
+    </section>
+
+</body>
+
+</html>
