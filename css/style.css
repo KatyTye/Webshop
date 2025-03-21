@@ -1,2 +1,72 @@
 /* --------------- BROWSER RESET --------------- */
 
+* {
+	box-sizing: border-box;
+	font-family: "Kantumruy Pro";
+}
+
+html, body, figure {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+img, svg, video {
+	height: 100%;
+	width: 100%;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-text-color);
+}
+
+/* --------------- EXTRA --------------- */
+
+:root {
+	--primary-background-color: white;
+	--primary-text-color: black;
+	--secondary-background-color: white;
+	--secondary-text-color: black;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+
+/* --------------- HEADER --------------- */
+
+header {
+	width: 100%;
+}
+
+/* --------------- MAIN --------------- */
+
+main {
+	width: 100%;
+}
+
+/* --------------- FOOTER --------------- */
+
+footer {
+	width: 100%;
+}
+
+/* --------------- DEVICES --------------- */
+
+@media screen and (max-aspect-ratio: 16/9) {
+	
+}
