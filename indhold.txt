@@ -1,0 +1,50 @@
+Hold: Valdemar, Hina og David
+
+Ider til Hjemmesiden:
+- elektronik webshop fx proshop, komplett etc
+
+Opgave Fordeling:
+- David ()
+- Valdemar ()
+- Hina ()
+
+Sider:
+ - Start Side
+ - Om Os
+ - Søge side
+ - produkt side
+ - Kurv og Betalings side
+ - profil side/login side
+ - Nyhedsbrev side / form submit
+
+ OPGAVE:
+
+    Instructions
+    Grupper med 3 - 4 medlemmer
+
+    I skal lave et brand som sælger produkter via en webshop
+
+    I skal selv udvikle en visuel identitet (Logo, og andre grafiske elementer for jeres brand)
+    Undervejs skal i udvikle et produkt-katalog i form a JS filer med arrays eller JSON filer.
+
+    Jeres produkter skal tilhøre produktkategorier og evt. tags.
+
+    I skal have overblik over på kategorier, tags og produkter før i koder noget.
+
+    Kategorier kan have mange produkter, men tænk også på om produkterne kan have flere kategorier.
+
+    Undervejs skal i producere webshopppen med følgende krav:
+
+    Produkter og kategorier må ikke hardcodes ind i HTML, men skal hentes fra jeres data filer
+    Prøv at arbejde med en kurv der kan huske hvilke produkter man har valgt
+    Jeres hjemmeside skal være semantisk og responsiv
+    Tip: Start med at brainstorme og få et overblik over opgaver med et kanban board (f.eks. Trello eller Microsoft Planner) 
+
+    Tip til struktur
+    Lav en HTML template til Kategori visning og en anden template til produkter.
+    Brug url queries (search params) til at hente produkter fra jeres data filer
+
+    Tænk menuen godt igennem. Ideelt skal menuen også hente data fra jeres datafiler, så den automatisk ændres )på alle sider når lageret ændres)
+
+    Aflever som zip eller et link (kun én fra hver gruppe afleverer, men alles navne skrives på afleveringen)
+    My work
