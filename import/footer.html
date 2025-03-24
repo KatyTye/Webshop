@@ -1,11 +1,5 @@
 <!-- footer har to sectioner- første section  -->
 
-<section class="social">
-	<h3>Udvalgte tilbud</h3>
-	<p>Vi arbejder løbende på at kunne give dig de bedste tilbud. Gå på opdagelse i tilbuddene og gør et kup.</p>
-	<button>Se tilbud</button>
-</section>
-
 <!--  anden section --dette section "information" har fire sections med nyttig links  -->
 
 <section class="information">
@@ -14,9 +8,9 @@
 			<li>
 				<h3>Genvej</h3>
 			</li>
-			<li><a href="#">Min side</a></li>
-			<li><a href="#">Ordrehistorik</li>
-			<li><a href="#">Gavekort</a></li>
+			<li><a href="profil.html">Min side</a></li>
+			<li><a href="profil.html?type=historik">Ordrehistorik</a></li>
+			<li><a href="produkt.html?type=gavekort">Gavekort</a></li>
 		</ul>
 	</section>
 
@@ -25,8 +19,8 @@
 			<li>
 				<h3>Information</h3>
 			</li>
-			<li><a href="#">Mærker</a></li>
-			<li><a href="#">producent</a></li>
+			<li><a href="index.html#Partners">Mærker</a></li>
+			<li><a href="index.html#Producent">producent</a></li>
 		</ul>
 	</section>
 	<section id="footer-section-3">
@@ -34,10 +28,10 @@
 			<li>
 				<h3>Hjælp og support</h3>
 			</li>
-			<li><a href="#">Kontakt os </a></li>
-			<li><a href="#">Kundeservice</a></li>
-			<li><a href="#">Produkthjælp og retur</a></li>
-			<li><a href="#">Fragt og levering</a></li>
+			<li><a href="kontakt.html">Kontakt os </a></li>
+			<li><a href="kontakt.html#Kundeservice">Kundeservice</a></li>
+			<li><a href="kontakt.html#Retur">Produkthjælp og retur</a></li>
+			<li><a href="kontakt.html#fragt">Fragt og levering</a></li>
 		</ul>
 	</section>
 	<section id="footer-section-4">
@@ -45,16 +39,22 @@
 			<li>
 				<h3>Om VoltageX</h3>
 			</li>
-			<li><a href="#">Om os</a></li>
-			<li><a href="#">Miljøpolitik og ESG</a></li>
-			<li><a href="#">Norwegian Transparency Act</a></li>
+			<li><a href="om.html">Om os</a></li>
+			<li><a href="om.html#politik">Miljøpolitik og ESG</a></li>
+			<li><a href="om.html#Transparency">Norwegian Transparency Act</a></li>
 		</ul>
+	</section>
+
+	<section class="social" id="footer-section-5">
+		<h3>Udvalgte tilbud</h3>
+		<p>Vi arbejder løbende på at kunne give dig de bedste tilbud. Gå på opdagelse i tilbuddene og gør et kup.</p>
+		<button onclick="changePage('search.html?search=tilbud')">Se tilbud</button>
 	</section>
 </section>
 
 <!-- div med social media  i nav tag og betalingsmugligheder i figure tag -->
 
-<div id="below-footer">
+<section class="below-footer">
 	<!-- Social media clickable images	 -->
 	<nav>
 		<a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="images/icons/facebook.svg"
@@ -72,10 +72,9 @@
 		<img src="images/icons/visa.svg" alt="MobilePay">
 		<img src="images/icons/visa.svg" alt="DANKORT">
 	</figure>
-</div>
-<!-- bund af hjemmeside med copyright og e-mærk	 -->
-<div>
-	<p>© 2025 VoltageX. All rights reserved</p>
-	<p> e -mærke here <img src="/images/icons/emaerke.png" alt="e-mærk"></p>
-</div>
+	<!-- bund af hjemmeside med copyright og e-mærk	 -->
+	<p>
+		© 2025 VoltageX. All rights reserved e -mærke here <img src="/images/icons/emaerke.png" alt="e-mærk">
+	</p>
+</section>
 </div>

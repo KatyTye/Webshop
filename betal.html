@@ -9,11 +9,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/produkt.css">
-	<script src="/js/produktload.js" defer></script>
+	<link rel="stylesheet" href="/css/kurv.css">
 	<script src="/js/htmlload.js" defer></script>
 	<script src="/js/main.js" defer></script>
-	<script src="/js/data.js" defer></script>
 	<title>VoltageX</title>
 </head>
 
@@ -21,23 +19,25 @@
 	<header id="header" class="header"></header>
 
 	<main>
+		<h3>Varer i indkøbskurven</h3>
 
-		<section id="billede-side">
-			<h1 id="product-navn">Product Navn</h1>
-			<p id="product-specification"> product-specification</p>
-			<figure id="product-image">
+		<section id="item">
+			<article>
 				<img src="" alt="">
-			</figure>
+				<ul>
+					<li>
+						<h3>title</h3>
+						<p>Beskrivelse</p>
+						<p>stock</p>
+						<p>Pris</p>
+					</li>
+				</ul>
+			</article>
 		</section>
 
-		<section id="produkt-indhold">
-			<h3 id="pris-product"> Pris </h3>
-			<h4>product description</h4>
-			<p id="beskrivelse">product text here</p>
-
-			<h4>katagoriere</h4>
-			<ul id="kategorier">
-			</ul>
+		<section id="finalPrice">
+			<p>totalt: pris</p>
+			<button onclick="buyItemsForFree()">GÅ TIL KASSEN</button>
 		</section>
 	</main>
 
