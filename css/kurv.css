@@ -1,2 +1,137 @@
 /* -------------- BETAL / KURV -------------- */
 
+main {
+	padding: 100px 50px;
+	display: flex;
+}
+
+main #items {
+	display: inherit;
+	flex-direction: column;
+	gap: 40px;
+	width: 70%;
+}
+
+main #items h3 {
+	border-bottom: solid 1px gray;
+	margin: 0;
+}
+
+main #items article {
+	display: inherit;
+	border: solid 2px gray;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+main #items article ul {
+	width: 100%;
+}
+
+main #items article ul li {
+	padding: 5px;
+}
+
+main #items article ul .stock {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+main #items article ul .stock span {
+	display: inline-block;
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(10, 255, 20);
+}
+
+main #items article ul .besk {
+	overflow: hidden;
+	max-width: 695.859px;
+	max-height: 6.75vh;
+}
+
+main #items article ul li:last-child {
+	height: 6.75vh;
+}
+
+main #items article ul li .stock {
+	font-style: italic;
+}
+
+main #items article ul li .pris .span-rabat-one {
+	font-weight: bold;
+}
+
+main #items article ul li .pris .span-rabat-two {
+	margin-left: 40vh;
+	text-decoration: line-through;
+	font-style: italic;
+}
+
+main #items article ul li .pris .span-rabat-three {
+	font-style: italic;
+	font-weight: light;
+}
+
+main #items article figure {
+	display: flex;
+	align-items: center;
+	width: 26vh;
+	height: 20vh;
+}
+
+main #items article figure img {
+	width: auto;
+	height: auto;
+}
+
+main #items button {
+	background: transparent;
+	color: transparent;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border: none;
+	background-image: url(/images/icons/cross.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* FINAL SECTION */
+
+main #finalPrice {
+	display: inherit;
+	align-items: center;
+	flex-direction: column;
+	padding: 25px;
+	width: 25%;
+}
+
+main #finalPrice p {
+	text-align: left;
+}
+
+main #finalPrice p:last-of-type {
+	font-weight: bold;
+	font-style: italic;
+	padding-top: 30px;
+}
+
+main #finalPrice button {
+	font-family: "Kantumruy Pro";
+	font-weight: bold;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-radius: 40px;
+	border-style: none;
+	background-color: rgb(116, 187, 49);
+	width: 100%;
+	color: white;
+}
+
+main #finalPrice button:hover {
+	background-color: rgb(89, 138, 44);
+}

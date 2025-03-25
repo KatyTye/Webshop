@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/kurv.css">
 	<script src="/js/htmlload.js" defer></script>
+	<script src="/js/data.js" defer></script>
 	<script src="/js/main.js" defer></script>
 	<title>VoltageX</title>
 </head>
@@ -19,25 +20,17 @@
 	<header id="header" class="header"></header>
 
 	<main>
-		<h3>Varer i indkøbskurven</h3>
-
-		<section id="item">
-			<article>
-				<img src="" alt="">
-				<ul>
-					<li>
-						<h3>title</h3>
-						<p>Beskrivelse</p>
-						<p>stock</p>
-						<p>Pris</p>
-					</li>
-				</ul>
-			</article>
+		<section id="items">
+			<h3>Varer i indkøbskurven</h3>
 		</section>
-
 		<section id="finalPrice">
-			<p>totalt: pris</p>
-			<button onclick="buyItemsForFree()">GÅ TIL KASSEN</button>
+			<h3>Fragt Informastion</h3>
+			<p>
+				Der findes flere leveringsmuligheder, som kan tilpasses dine behov. Standardlevering er ofte gratis og tager typisk 3-5 hverdage. Ekspreslevering er hurtigere, ofte inden for 1-2 hverdage, men kan medføre ekstra omkostninger. Levering til pakkeshops giver dig fleksibilitet til at hente din pakke, når det passer dig bedst.
+			</p>
+			<p id="moms">0.- DKK moms</p>
+			<h3 id="finaloutput">Total inkl. moms 0.- DKK</h3>
+			<a href="https://ko-fi.com/shidosetsuna"><button onclick="buyItemsForFree()">Fortsæt til kassen</button></a>
 		</section>
 	</main>
 

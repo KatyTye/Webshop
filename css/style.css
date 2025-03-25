@@ -244,6 +244,7 @@ body {
 
 main {
 	width: 100%;
+	min-height: 41.85vh;
 }
 
 /* --------------- FOOTER --------------- */

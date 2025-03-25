@@ -15,31 +15,30 @@ Sider:
  OPGAVE:
 
     Instructions
-    Grupper med 3 - 4 medlemmer
+      Grupper med 3 -4 medlemmer    -check
 
-    I skal lave et brand som sælger produkter via en webshop
+      I skal lave et brand som sælger produkter på via en webshop
 
-    I skal selv udvikle en visuel identitet (Logo, og andre grafiske elementer for jeres brand)
-    Undervejs skal i udvikle et produkt-katalog i form a JS filer med arrays eller JSON filer.
+      I skal selv udvikle en visuel identitet (Logo, og andre grafiske elementer for jeres brand)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      Undervejs skal i udvikle et produkt-katalog i form a JS filer med arrays eller JSON filer.    -check
 
-    Jeres produkter skal tilhøre produktkategorier og evt. tags.
+      Jeres produkter skal tilhøre produktkategorier og evt. tags.    -check
 
-    I skal have overblik over på kategorier, tags og produkter før i koder noget.
+      I skal have overblik over på kategorier, tags og produkter før i koder noget.  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-    Kategorier kan have mange produkter, men tænk også på om produkterne kan have flere kategorier.
+      Kategorier kan have mange produkter, men tænk også på om produkterne kan have flere kategorier.    -check
 
-    Undervejs skal i producere webshopppen med følgende krav:
+      Undervejs skal i producere webshopppen med følgende krav:
 
-    Produkter og kategorier må ikke hardcodes ind i HTML, men skal hentes fra jeres data filer
-    Prøv at arbejde med en kurv der kan huske hvilke produkter man har valgt
-    Jeres hjemmeside skal være semantisk og responsiv
-    Tip: Start med at brainstorme og få et overblik over opgaver med et kanban board (f.eks. Trello eller Microsoft Planner) 
+      - Produkter og kategorier må ikke hardcodes ind i HTML, men skal hentes fra jeres data filer    -check
+      - Prøv at arbejde med en kurv der kan huske hvilke produkter man har valgt    -check
+      - Jeres hjemmeside skal være semantisk og responsiv !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      Tip: Start med at brainstorme og få et overblik over opgaver med et kanban board (f.eks. Trello eller Microsoft Planner)     -check
 
-    Tip til struktur
-    Lav en HTML template til Kategori visning og en anden template til produkter.
-    Brug url queries (search params) til at hente produkter fra jeres data filer
+      Tip til struktur
+      Lav en HTML template til Kategori visning og en anden template til produkter.    -check
+      Brug url queries (search params) til at hente produkter fra jeres data filer    -check
 
-    Tænk menuen godt igennem. Ideelt skal menuen også hente data fra jeres datafiler, så den automatisk ændres )på alle sider når lageret ændres)
+      Tænk menuen godt igennem. Ideelt skal menuen også hente data fra jeres datafiler, så den automatisk ændres (på alle sider når lageret ændres)    -check
 
-    Aflever som zip eller et link (kun én fra hver gruppe afleverer, men alles navne skrives på afleveringen)
-    My work
+      Aflever som zip eller et link (kun én fra hver gruppe afleverer, men alles navne skrives på afleveringen)

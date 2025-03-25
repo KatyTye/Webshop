@@ -34,20 +34,33 @@ async function getItems(params) {
 	  productPrice.innerHTML = `${json[id].pris},- dkk`
 	  productBeskrivelse.innerHTML = json[id].beskrivelse
 
-	  json[id].kategorier.forEach(function (elm, idx) {
+	  json[id].kategorier.forEach(function (elm) {
 		productKategorier.innerHTML += `<li><a href="search.html?search=${elm}">${elm}</a></li>`
 	  })
-
-	//   productLoad.innerHTML += `<p>${json[id].stock} på lager</p>`
-
-	//   productLoad.innerHTML += `<p>${json[id].beskrivelse}</p>`
-
-	//   productImgLoad.innerHTML += `<img src="${json[id].billdekilder}">`
 
       productLoad.innerHTML += `<button onclick="tilføjItem(${id+1})">Læg i indkøbsvogn</button>`
 	  
 	} catch (error) {
 	  console.error(error.message);
 	}
+}
+
+function carouselItems() {
+	fetch('/json/items.json')
+  .then(response => response.json())
+  .then(data => {
+    const featured = data.filter(item => item.featured === true);
+
+    
+    featured.forEach((item, index) => {
+      console.log(`ID: ${item.id}, featured is true, billeder: ${item.billdekilder}`);
+		if (item.beskrivelse.includes) {
+			
+		}
+    });
+
+  })
+  .catch(error => {
+    console.error('Error fetching JSON:', error);
+  });
   }
-  

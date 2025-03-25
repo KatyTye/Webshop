@@ -12,7 +12,7 @@
 		"billdekilder": [
 			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074864&w=640&q=75"
 		],
-		"featured": false
+		"featured": true
 	},
 	{
 		"id": 2,
@@ -26,6 +26,127 @@
         "kategorier": ["Gaming", "grafikkort", "PC komponenter"],
 		"billdekilder": [
 			"https://www.komplett.dk/img/p/1200/1318012.jpg"
+		],
+		"featured": true
+	},
+	{
+		"id": 3,
+		"title": "Acer Aspire Go 14'' WUXGA",
+		"pris": 2190,
+		"stock": 2,
+		"rabat": 84,
+		"beskrivelse": "Udstyret med en Intel® N100-processor, 4 GB LPDDR5 RAM og lynhurtig 128 GB UFS-lagring sikrer denne bærbare computer problemfri multitasking og lydhør ydeevne. Nyd desuden endnu mere produktivitet med enestående batterilevetid.",
+		"farver": ["hvid"],
+		"specs": ["2 GB RAM"],
+        "kategorier": ["Bærbar", "PC", "office"],
+		"billdekilder": [
+			"https://www.komplett.dk/img/p/1200/1308478_1.jpg"
+		],
+		"featured": false
+	},
+	{
+		"id": 4,
+		"title": "Oral-B iO 8 elektrisk tandbørste (sort)",
+		"pris": 1899,
+		"stock": 2,
+		"rabat": 24
+		,
+		"beskrivelse": "Få en fantastisk tandplejeoplevelse med denne avancerede elektriske tandbørste. Den er designet til voksne og tilbyder en række smarte funktioner, der gør tandbørstningen både effektiv og behagelig. Den stilfulde sorte farve og det ergonomiske design gør, at den også ser godt ud på badeværelset.",
+		"farver": ["sort"],
+		"specs": ["8.800 mikrovibrationer pr. minut"],
+        "kategorier": ["pleje"],
+		"billdekilder": [
+			"https://www.komplett.dk/img/p/1200/1310243.jpg"
+		],
+		"featured": false
+	},
+	{
+		"id": 5,
+		"title": "iPhone 16e smartphone (sort)",
+		"pris": 4999,
+		"stock": 99,
+		"rabat": 10,
+		"beskrivelse": "Oplev en imponerende ydeevne, fantastiske visuals og langvarig performance med iPhone 16e smartphonen. Den er udstyret med en betagende 6,1'' Super Retina XDR-skærm, et 48MP 2-i-1 kamerasystem og en kraftfuld A18-processor med Apple intelligence.",
+		"farver": ["sort"],
+		"specs": ["6,1“ Super Retina XDR-skærm", "48 MP 2-i-1 kamerasystem", "Kraftfuld A18-chip"],
+        "kategorier": ["telefon", "iphone"],
+		"billdekilder": [
+			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800012914844&w=640&q=75"
+		],
+		"featured": true
+	},
+	{
+		"id": 6,
+		"title": "Samsung Galaxy S24 FE (sort)",
+		"pris": 5999,
+		"stock": 1,
+		"rabat": 0,
+		"beskrivelse": "Samsung Galaxy S24 FE 5G er en perfekt blanding af stil og kraft og er udstyret med AI-funktioner, en lysstærk 6,7″ Dynamic AMOLED-skærm, et enestående tredobbelt kamera og en pålidelig Exynos 2400-processor, der giver en jævn og effektiv ydeevne.",
+		"farver": ["sort"],
+		"specs": ["6,7'' Dynamic AMOLED 2X 120Hz-skærm", "50+8+12Mp tredobbelt kamera", "4.700mAh-batteri"],
+        "kategorier": ["telefon", "samsung"],
+		"billdekilder": [
+			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D180001283495424&w=640&q=75"
+		],
+		"featured": true
+	},
+	{
+		"id": 7,
+		"title": "Philips OneBlade 360 ansigts (grøn)",
+		"pris": 329,
+		"stock": 666,
+		"rabat": 0,
+		"beskrivelse": "Philips OneBlade 360 ansigts- og kropstrimmeren QP2834/23 har OneBlade-teknologi med et dobbelt beskyttelsessystem og et langtidsholdbart batteri. OneBlade barberer sig ikke for tæt, så din hud forbliver behagelig.",
+		"farver": ["sort", "grøn"],
+		"specs": ["60 minutters brugstid", "OneBlade-teknologi", "Vandtæt"],
+        "kategorier": ["trimmer", "philips"],
+		"billdekilder": [
+			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D180001281155731&w=640&q=75"
+		],
+		"featured": true
+	},
+	{
+		"id": 8,
+		"title": "Samsung 75'' QB75C 16/7 350 nits 4K Signage (sort)",
+		"pris": 11509,
+		"stock": 4,
+		"rabat": 0,
+		"beskrivelse": "Med Samsung 75'' smart digitale reklameskærm LH75QBCEBGCXEN kan du være sikker på at din virksomhed har alt, hvad den har brug for. Skærmen bruger Samsung Quantum Processor Lite 4K og Dynamic Crystal Color til at levere et skarpt billede og farver.",
+		"farver": ["sort"],
+		"specs": ["6,7'' Dynamic AMOLED 2X 120Hz-skærm", "50+8+12Mp tredobbelt kamera", "4.700mAh-batteri"],
+        "kategorier": ["tv", "samsung"],
+		"billdekilder": [
+			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021736011&w=640&q=75"
+		],
+		"featured": true
+	},
+	{
+		"id": 9,
+		"title": "Sandstrøm USB-C til USB-C kabel (3m hvid)",
+		"pris": 349,
+		"stock": 999,
+		"rabat": 5,
+		"beskrivelse": "Takket være Sandstrøm USB-C til USB-C kablet kan du nemt oplade din telefon, tablet eller endda en bærbar takket være 60 W hurtig opladning, holdbar konstruktion med dobbelt afskærmning og forniklede stik.",
+		"farver": ["hvid"],
+		"specs": ["USB-C til USB-C", "Nikkelbelagte stik", "Understøtter op til 60 W opladning"],
+        "kategorier": ["oplader", "ledning"],
+		"billdekilder": [
+			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021562110&w=640&q=75"
+		],
+		"featured": true
+	},
+	{
+		"id": 10,
+		"title": "Sandstrøm 30W USB-C (hvid)",
+		"pris": 269,
+		"stock": 264,
+		"rabat": 0,
+		"beskrivelse": "Oplad din telefon eller tablet hurtigt og effektivt med Sandstrøm 30W USB-C GaN opladeren. Du får op til 30 W opladningshastighed, en USB-C-port og effektiv opladning takket være Gallium Nitride-teknologien.",
+		"farver": ["hvid"],
+		"specs": ["USB-C-port", "Op til 30W opladningshastigheder", "Europæisk stik"],
+        "kategorier": ["oplader"],
+		"billdekilder": [
+			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021290841&w=640&q=75"
 		],
 		"featured": true
 	}
