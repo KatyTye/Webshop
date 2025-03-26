@@ -10,7 +10,7 @@
         "kategorier": ["Gaming", "PC", "Bærbar"],
 		"specs": ["64 GB RAM", "256 GB SSD"],
 		"billdekilder": [
-			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074864&w=640&q=75"
+			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074889&w=1200&q=75","https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074862&w=1200&q=75","https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074864&w=640&q=75", "https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074865&w=1200&q=75"
 		],
 		"featured": true
 	},
@@ -49,8 +49,7 @@
 		"title": "Oral-B iO 8 elektrisk tandbørste (sort)",
 		"pris": 1899,
 		"stock": 2,
-		"rabat": 24
-		,
+		"rabat": 24,
 		"beskrivelse": "Få en fantastisk tandplejeoplevelse med denne avancerede elektriske tandbørste. Den er designet til voksne og tilbyder en række smarte funktioner, der gør tandbørstningen både effektiv og behagelig. Den stilfulde sorte farve og det ergonomiske design gør, at den også ser godt ud på badeværelset.",
 		"farver": ["sort"],
 		"specs": ["8.800 mikrovibrationer pr. minut"],
@@ -65,7 +64,7 @@
 		"title": "iPhone 16e smartphone (sort)",
 		"pris": 4999,
 		"stock": 99,
-		"rabat": 10,
+		"rabat": 0,
 		"beskrivelse": "Oplev en imponerende ydeevne, fantastiske visuals og langvarig performance med iPhone 16e smartphonen. Den er udstyret med en betagende 6,1'' Super Retina XDR-skærm, et 48MP 2-i-1 kamerasystem og en kraftfuld A18-processor med Apple intelligence.",
 		"farver": ["sort"],
 		"specs": ["6,1“ Super Retina XDR-skærm", "48 MP 2-i-1 kamerasystem", "Kraftfuld A18-chip"],

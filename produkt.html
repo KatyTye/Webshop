@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/produkt.css">
 	<script src="/js/produktload.js" defer></script>
+	<script src="/js/carouselProduct.js" defer></script>
 	<script src="/js/htmlload.js" defer></script>
 	<script src="/js/main.js" defer></script>
 	<script src="/js/data.js" defer></script>
@@ -19,25 +20,50 @@
 
 <body>
 	<header id="header" class="header"></header>
-
+	<button onclick="getItemPictures()">click</button>
 	<main>
-
 		<section id="billede-side">
 			<h1 id="product-navn">Product Navn</h1>
 			<p id="product-specification"> product-specification</p>
 			<figure id="product-image">
-				<img src="" alt="">
+				<!-- <section>
+					<button onclick="imageScrollUp()"></button>
+					<ul id="produkt-images">
+						<li>
+							<img src="/images/icons/clock.svg" alt="billede">
+						</li>
+
+						<li>
+							<img src="/images/icons/facebook.svg" alt="billede">
+						</li>
+					</ul>
+					<button onclick="imageScrollDown()"></button>
+				</section> -->
+
+
+
+				<!-- <div id="promo">
+					<div class="carousel-wrapper">
+						<div class="carousel">
+							<div id="carousel">
+							</div>					
+						</div>
+					  </div>
+				</div> -->
 			</figure>
 		</section>
 
 		<section id="produkt-indhold">
-			<h3 id="pris-product"> Pris </h3>
-			<h4>product description</h4>
-			<p id="beskrivelse">product text here</p>
-
-			<h4>katagoriere</h4>
-			<ul id="kategorier">
-			</ul>
+			<article>
+				<h4>Pris</h4>
+				<h3 id="pris-product"> Pris </h3>
+				<h4>Beskrivelse</h4>
+				<p id="beskrivelse">product text here</p>
+				<h4>Specs</h4>
+				<ul id="specs-produkt"></ul>
+				<h4>Kategorier</h4>
+				<ul id="kategorier"></ul>
+			</article>
 		</section>
 	</main>
 

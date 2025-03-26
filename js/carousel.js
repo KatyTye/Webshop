@@ -71,7 +71,7 @@
     //Vi disabler interactions når slideren bevæger sig
       disableInteraction();
       var newPrevious = slide - 1,
-          newNext = slide + 1,
+          newNext = slide + 1,  
           oldPrevious = slide - 2,
           oldNext = slide + 2;
   
@@ -140,5 +140,7 @@
   .catch(error => {
     console.error('Error fetching JSON:', error);
   });
-  }
+}
+
+  
 

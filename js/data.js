@@ -1,4 +1,7 @@
+const momsElement = document.getElementById("moms")
+const finalElement = document.getElementById("finaloutput")
 let kurv = localStorage.getItem("kurv")
+let cooldown = false
 
 if (kurv == null) {
 	localStorage.setItem("kurv", "")
@@ -16,39 +19,68 @@ function tilføjItem(itemId) {
 	}
 }
 
-function fjernFraKurv(input) {
-	let split = kurv.split("-")
-	let nyKurv = ""
-
-	if (kurv.includes("-")) {
-		split.forEach(function (elm, idx) {
-			if (idx!=input) {
-				if (nyKurv=="") {
-					nyKurv = elm
-				} else {
-					nyKurv += `-${elm}`
+function fjernFraKurv(input, amount) {
+	if (cooldown == false) {
+		cooldown = true
+		console.log("click detected")
+		let split = kurv.split("-")
+		let totalpris = 0
+		let nyKurv = ""
+		console.log(nyKurv)
+		if (kurv.includes("-")) {
+			split.forEach(function (elm, idx) {
+				if (idx!=input) {
+					if (nyKurv=="") {
+						nyKurv = elm
+						console.log("DOING1")
+					} else {
+						nyKurv += `-${elm}`
+						console.log("DOING2")
+					}
+					console.log(nyKurv)
 				}
-			}
-		})
+			})
+		}
+	
+		localStorage.setItem("kurv", nyKurv)
+
+		console.log(localStorage.getItem("kurv"))
+	
+		kurv = localStorage.getItem("kurv")
+	
+		let deleteElement = document.getElementById(`item-${input}`)
+		deleteElement.remove()
+		
+		localStorage.setItem("pris", (Number(localStorage.getItem("pris"))-amount))
+	
+		momsElement.innerHTML = `${Math.round(((Number(localStorage.getItem("pris"))/100)*20))}.- DKK moms`
+	
+		totalpris += Math.round(Number(localStorage.getItem("pris")) + Math.round(((Number(localStorage.getItem("pris"))/100)*20)))
+	
+		finalElement.innerHTML = `Total inkl. moms ${totalpris}.- DKK`
+
+		setTimeout(function () {
+			cooldown = false
+			console.log("COOLDOWN ENDED !!!!!!!!!!!!!!!!!!!")
+		}, 1000)
+	} else {
+		console.log("COOLDOWN")
 	}
-
-	localStorage.setItem("kurv", nyKurv)
-
-	kurv = localStorage.getItem("kurv")
-
-	location.href = "betal.html"
 }
 
 async function loadKurv() {
 	let indholdElement = document.getElementById("items")
+	localStorage.setItem("pris", 0)
 	let kanKøbe = true
-	let totalpris = 0
 
 	if (localStorage.getItem("kurv") != "") {
 		let kurv = localStorage.getItem("kurv")
+		let totalpris = 0
+
 		if (localStorage.getItem("kurv").includes("-")) {
 			const url = "/json/items.json";
 			const response = await fetch(url);
+			localStorage.setItem("pris", 0)
 			if (!response.ok) {
 			throw new Error(`Response status: ${response.status}`);
 			}
@@ -72,17 +104,19 @@ async function loadKurv() {
 					let templateElement = document.querySelector(".template")
 	
 					imageElement.src = json[id].billdekilder
-					titleElement.innerHTML = json[id].title
+					titleElement.innerHTML = `<a href="produkt.html?show=${id + 1}" target="_blank">${json[id].title}</a>`
 					stockElement.innerHTML = `<span class="stock-icon"></span>${json[id].stock} på lager`
 					beskrivelseElement.innerHTML = json[id].beskrivelse
+
+					let productPrice = 0
 	
 					if (json[id].rabat == 0) {
 						prisElement.innerHTML = `<span class="span-rabat-one">${json[id].pris}.- DKK</span>`
-						totalpris += json[id].pris
+						productPrice = json[id].pris
 					} else {
 						let rabatPris = (Number(json[id].pris) / 100)*json[id].rabat
 						let pris = Math.round(Number(json[id].pris) - rabatPris)
-						totalpris += pris
+						productPrice = pris
 						prisElement.innerHTML = `<span class="span-rabat-one">${pris}.- DKK</span> <span class="span-rabat-two">${json[id].pris}.-</span> <span class="span-rabat-three">${json[id].rabat}% rabat</span>`
 					}
 					if (json[id].stock == 0) {
@@ -90,22 +124,19 @@ async function loadKurv() {
 						stockIconElement.style.backgroundColor = "red"
 						kanKøbe = false
 					}
-	
-					let momsElement = document.getElementById("moms")
-					let finalElement = document.getElementById("finaloutput")
-					totalpris = Math.round(totalpris + ((totalpris/100)*20))
-	
-					momsElement.innerHTML = `${Math.round(((totalpris/100)*20))}.- DKK moms`
-					finalElement.innerHTML = `Total inkl. moms ${totalpris}.- DKK`
 
-					templateElement.innerHTML += `<button onclick="fjernFraKurv(${idx})"></button>`
-					
+					localStorage.setItem("pris", (Number(localStorage.getItem("pris")) + productPrice))
+
+					templateElement.innerHTML += `<button onclick="fjernFraKurv(${idx}, ${productPrice})"></button>`
+
+					document.querySelector(".template").id = `item-${idx}`
 					document.querySelector(".template").classList.remove("template")
 				});
 			})
 		} else {
 			const url = "/json/items.json";
 			const response = await fetch(url);
+			let totalpris = 0
 			if (!response.ok) {
 			throw new Error(`Response status: ${response.status}`);
 			}
@@ -125,17 +156,19 @@ async function loadKurv() {
 				let templateElement = document.querySelector(".template")
 
 				imageElement.src = json[id].billdekilder
-				titleElement.innerHTML = json[id].title
+				titleElement.innerHTML = `<a href="produkt.html?show=${id + 1}" target="_blank">${json[id].title}</a>`
 				stockElement.innerHTML = `<span class="stock-icon"></span>${json[id].stock} på lager`
 				beskrivelseElement.innerHTML = json[id].beskrivelse
 
+				let productPrice = 0
+
 				if (json[id].rabat == 0) {
 					prisElement.innerHTML = `<span class="span-rabat-one">${json[id].pris}.- DKK</span>`
-					totalpris += json[id].pris
+					productPrice = json[id].pris
 				} else {
 					let rabatPris = (Number(json[id].pris) / 100)*json[id].rabat
 					let pris = Math.round(Number(json[id].pris) - rabatPris)
-					totalpris += pris
+					productPrice = pris
 					prisElement.innerHTML = `<span class="span-rabat-one">${pris}.- DKK</span> <span class="span-rabat-two">${json[id].pris}.-</span> <span class="span-rabat-three">${json[id].rabat}% rabat</span>`
 				}
 				if (json[id].stock == 0) {
@@ -144,17 +177,29 @@ async function loadKurv() {
 					kanKøbe = false
 				}
 
-				let momsElement = document.getElementById("moms")
-				let finalElement = document.getElementById("finaloutput")
-				totalpris = Math.round(totalpris + ((totalpris/100)*20))
+				localStorage.setItem("pris", (Number(localStorage.getItem("pris")) + productPrice))
 
-				momsElement.innerHTML = `${Math.round(((totalpris/100)*20))}.- DKK moms`
-				finalElement.innerHTML = `Total inkl. moms ${totalpris}.- DKK`
-
-				templateElement.innerHTML += `<button onclick="fjernFraKurv(1)"></button>`
+				templateElement.innerHTML += `<button onclick="fjernFraKurv(1, ${productPrice})"></button>`
 				
+				document.querySelector(".template").id = `item-1`
 				document.querySelector(".template").classList.remove("template")
 			});
+		}
+
+		if (localStorage.getItem("kurv").includes("-")) {
+			setTimeout(function () {	
+				momsElement.innerHTML = `${Math.round(((Number(localStorage.getItem("pris"))/100)*20))}.- DKK moms`
+	
+				totalpris += Math.round(Number(localStorage.getItem("pris")) + Math.round(((Number(localStorage.getItem("pris"))/100)*20)))
+				finalElement.innerHTML = `Total inkl. moms ${totalpris}.- DKK`
+			}, 100*Number(localStorage.getItem("kurv").split("-").length))
+		} else {
+			setTimeout(function () {	
+				momsElement.innerHTML = `${Math.round(((Number(localStorage.getItem("pris"))/100)*20))}.- DKK moms`
+	
+				totalpris += Math.round(Number(localStorage.getItem("pris")) + Math.round(((Number(localStorage.getItem("pris"))/100)*20)))
+				finalElement.innerHTML = `Total inkl. moms ${totalpris}.- DKK`
+			}, 100)
 		}
 	}
 }

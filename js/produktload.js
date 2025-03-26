@@ -64,3 +64,38 @@ function carouselItems() {
     console.error('Error fetching JSON:', error);
   });
   }
+
+  function getItemPictures() {
+	let params = new URLSearchParams(document.location.search);
+	let show = parseInt(params.get("show"));
+	console.log(show);
+  
+	fetch('/json/items.json')
+	  .then(response => response.json())
+	  .then(data => {
+		const itemPicture = data.find(item => item.id === show);
+  
+		if (!itemPicture) {
+		  console.error("Item not found");
+		  return;
+		}
+  
+		const imageContainer = document.getElementById("product-image");
+		imageContainer.innerHTML = ""; 
+  
+		itemPicture.billdekilder.forEach((imageUrl, index) => {
+		  const imgClass = index === 0 ? "carousel__photo initial" : "carousel__photo";
+		  imageContainer.innerHTML += `
+			<a href="produkt.html?show=${itemPicture.id}">
+			  <img class="${imgClass}" src="${imageUrl}">
+			</a>`;
+		});
+  
+		imageContainer.innerHTML += `
+		  <div class="carousel__button--next"></div>
+		  <div class="carousel__button--prev"></div>`;
+  
+		initCarousel();
+	  });
+  }
+  
