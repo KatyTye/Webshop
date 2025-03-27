@@ -13,13 +13,13 @@ main #items {
 }
 
 main #items h3 {
-	border-bottom: solid 1px gray;
+	border-bottom: solid 1px rgb(49, 148, 187);
 	margin: 0;
 }
 
 main #items article {
 	display: inherit;
-	border: solid 2px gray;
+	border: solid 2px rgb(49, 148, 187);
 	border-radius: 10px;
 	padding: 10px;
 }
@@ -110,6 +110,10 @@ main #finalPrice {
 	width: 25%;
 }
 
+main #finalPrice a {
+	width: 100%;
+}
+
 main #finalPrice p {
 	text-align: left;
 }
@@ -127,11 +131,11 @@ main #finalPrice button {
 	padding: 10px 15px;
 	border-radius: 40px;
 	border-style: none;
-	background-color: rgb(116, 187, 49);
+	background-color: rgb(49, 148, 187);
 	width: 100%;
 	color: white;
 }
 
 main #finalPrice button:hover {
-	background-color: rgb(89, 138, 44);
+	background-color: rgb(24, 120, 158);
 }

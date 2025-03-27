@@ -27,18 +27,18 @@
 		"billdekilder": [
 			"https://www.komplett.dk/img/p/1200/1318012.jpg"
 		],
-		"featured": true
+		"featured": false
 	},
 	{
 		"id": 3,
 		"title": "Acer Aspire Go 14'' WUXGA",
 		"pris": 2190,
 		"stock": 2,
-		"rabat": 84,
-		"beskrivelse": "Udstyret med en Intel® N100-processor, 4 GB LPDDR5 RAM og lynhurtig 128 GB UFS-lagring sikrer denne bærbare computer problemfri multitasking og lydhør ydeevne. Nyd desuden endnu mere produktivitet med enestående batterilevetid.",
+		"rabat": 99,
+		"beskrivelse": "Udstyret med en Intel® N100-processor, 8 GB LPDDR5 RAM og lynhurtig 128 GB UFS-lagring sikrer denne bærbare computer problemfri multitasking og lydhør ydeevne. Nyd desuden endnu mere produktivitet med enestående batterilevetid.",
 		"farver": ["hvid"],
-		"specs": ["2 GB RAM"],
-        "kategorier": ["Bærbar", "PC", "office"],
+		"specs": ["8 GB RAM", "128 GB SSD"],
+        "kategorier": ["Bærbar", "PC", "office", "tilbud"],
 		"billdekilder": [
 			"https://www.komplett.dk/img/p/1200/1308478_1.jpg"
 		],
@@ -57,7 +57,7 @@
 		"billdekilder": [
 			"https://www.komplett.dk/img/p/1200/1310243.jpg"
 		],
-		"featured": false
+		"featured": true
 	},
 	{
 		"id": 5,
@@ -72,7 +72,7 @@
 		"billdekilder": [
 			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800012914844&w=640&q=75"
 		],
-		"featured": true
+		"featured": false
 	},
 	{
 		"id": 6,
@@ -85,7 +85,7 @@
 		"specs": ["6,7'' Dynamic AMOLED 2X 120Hz-skærm", "50+8+12Mp tredobbelt kamera", "4.700mAh-batteri"],
         "kategorier": ["telefon", "samsung"],
 		"billdekilder": [
-			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D180001283495424&w=640&q=75"
+			"https://www.electromart.com.gh/wp-content/uploads/2024/10/SAMSUNG-GALAXY-S24FE-8GB256GB.png"
 		],
 		"featured": true
 	},
@@ -110,7 +110,7 @@
 		"pris": 11509,
 		"stock": 4,
 		"rabat": 0,
-		"beskrivelse": "Med Samsung 75'' smart digitale reklameskærm LH75QBCEBGCXEN kan du være sikker på at din virksomhed har alt, hvad den har brug for. Skærmen bruger Samsung Quantum Processor Lite 4K og Dynamic Crystal Color til at levere et skarpt billede og farver.",
+		"beskrivelse": "Med Samsung 75'' smart tv digitale reklameskærm LH75QBCEBGCXEN kan du være sikker på at din virksomhed har alt, hvad den har brug for. Skærmen bruger Samsung Quantum Processor Lite 4K og Dynamic Crystal Color til at levere et skarpt billede og farver.",
 		"farver": ["sort"],
 		"specs": ["6,7'' Dynamic AMOLED 2X 120Hz-skærm", "50+8+12Mp tredobbelt kamera", "4.700mAh-batteri"],
         "kategorier": ["tv", "samsung"],
@@ -132,7 +132,7 @@
 		"billdekilder": [
 			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021562110&w=640&q=75"
 		],
-		"featured": true
+		"featured": false
 	},
 	{
 		"id": 10,
@@ -147,6 +147,268 @@
 		"billdekilder": [
 			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021290841&w=640&q=75"
 		],
+		"featured": false
+	},
+	{
+		"id": 11,
+		"title": "OMEN by HP Laptop 17-db0008no 17,3'' FHD 144Hz",
+		"pris": 13000,
+		"stock": 2,
+		"rabat": 2,
+		"beskrivelse": "Denne Lenovo Flex 5 er er et kompromis mellem bærbar computer og tablet, uden at den går ned på kraft eller bærbarhed. Maskinen er drevet af en Intel Pentium Gold-processor, der gør den i stand til nemt at udføre flere opgaver på én gang.",
+		"farver": ["sort","rød","hvid"],
+        "kategorier": ["Gaming", "PC", "Bærbar"],
+		"specs": ["64 GB RAM", "256 GB SSD"],
+		"billdekilder": [
+			"https://www.komplett.dk/img/p/1200/1317182.jpg",
+			"https://www.komplett.dk/img/p/1200/1317182_1.jpg",
+			"https://www.komplett.dk/img/p/1200/1317182_2.jpg", 
+			"https://www.komplett.dk/img/p/1200/1317182_3.jpg"
+		],
 		"featured": true
-	}
+	},
+		{
+			"id": 12,
+			"title": "ASUS ROG Strix G15 Gaming Laptop 15.6'' 165Hz",
+			"pris": 14999,
+			"stock": 4,
+			"rabat": 10,
+			"beskrivelse": "Kraftfuld gaming-laptop med AMD Ryzen 7 og RTX 3070, ideel til krævende spil og multitasking.",
+			"farver": ["sort", "grå"],
+			"kategorier": ["Gaming", "Bærbar", "PC"],
+			"specs": ["16 GB RAM", "1 TB SSD"],
+			"billdekilder": [
+				"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D180001002769415&w=1200&q=75",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDRltyvWZ5_jlmkcu5hi-jj2CgC_DKgFXAIg&s"
+			],
+			"featured": false
+		},
+		{
+			"id": 13,
+			"title": "Philips Series 9000 Skægtrimmer",
+			"pris": 799,
+			"stock": 10,
+			"rabat": 5,
+			"beskrivelse": "Avanceret trimmer med præcisionsskær og lang batterilevetid. Perfekt til daglig pleje.",
+			"farver": ["sort", "blå"],
+			"kategorier": ["trimmer", "philips", "pleje"],
+			"specs": ["PrecisionTrim Tech", "120 min brugstid"],
+			"billdekilder": [
+				"https://images.philips.com/is/image/philipsconsumer/937331bfb71c4d9096c9ae7d00c3c88f?$pnglarge$&wid=1250"
+			],
+			"featured": true
+		},
+		{
+			"id": 14,
+			"title": "Samsung 65'' QLED 4K Smart TV",
+			"pris": 9999,
+			"stock": 5,
+			"rabat": 15,
+			"beskrivelse": "Oplev film og serier med fantastisk farve og kontrast på dette store QLED-tv fra Samsung.",
+			"farver": ["sort"],
+			"kategorier": ["tv"],
+			"specs": ["4K UHD", "HDR10+", "Smart Hub"],
+			"billdekilder": [
+				"https://ok7ttytj.photoncache.com/wp-content/uploads/2024/04/181448-3c5334c6ea1ea854f1e0080431450b23d1d99607.jpg"
+			],
+			"featured": true
+		},
+		{
+			"id": 15,
+			"title": "Apple Lightning Oplader 20W",
+			"pris": 249,
+			"stock": 30,
+			"rabat": 0,
+			"beskrivelse": "Effektiv og hurtig opladning med denne originale Apple-oplader.",
+			"farver": ["hvid"],
+			"kategorier": ["oplaDer", "ledning"],
+			"specs": ["USB-C", "20W Fast Charge"],
+			"billdekilder": [
+				"https://offi.dk/wp-content/uploads/2023/03/Iphone-laddare-20w-Snabbladdare-med-Usb-c-till-lightning-kabel.jpg"
+			],
+			"featured": false
+		},
+		{
+			"id": 16,
+			"title": "Lenovo ThinkPad L14 Gen 2",
+			"pris": 7499,
+			"stock": 7,
+			"rabat": 7,
+			"beskrivelse": "Robust kontor-bærbar til professionelle brugere med høj ydeevne og pålidelighed.",
+			"farver": ["sort"],
+			"kategorier": ["office", "Bærbar", "PC"],
+			"specs": ["8 GB RAM", "512 GB SSD", "Intel i5"],
+			"billdekilder": [
+				"https://prelovedelectronics.dk/cdn/shop/files/L14.jpg?v=1695653224"
+			],
+			"featured": false
+		},
+			{
+				"id": 17,
+				"title": "MSI GeForce RTX 4070 Ventus 3X OC",
+				"pris": 5499,
+				"stock": 6,
+				"rabat": 8,
+				"beskrivelse": "Kraftfuldt grafikkort med avanceret køling og ray tracing for en overlegen gamingoplevelse.",
+				"farver": ["sort", "sølv"],
+				"kategorier": ["grafikkort", "Gaming", "PC"],
+				"specs": ["12 GB GDDR6X", "PCIe 4.0"],
+				"billdekilder": [
+					"https://owp.klarna.com/product/640x640/3009917910/MSI-GeForce-RTX-4070-Ti-Ventus-3X-OC-HDMI-3xDP-12GB.jpg?ph=true"
+				],
+				"featured": true
+			},
+			{
+				"id": 18,
+				"title": "Huawei Mate 50 Pro 256GB",
+				"pris": 6999,
+				"stock": 3,
+				"rabat": 12,
+				"beskrivelse": "Flagship-telefon med stærkt kamera og imponerende batteritid. Perfekt til powerbrugere.",
+				"farver": ["sort", "sølv"],
+				"kategorier": ["telefon"],
+				"specs": ["Snapdragon 8+", "256 GB Lager"],
+				"billdekilder": [
+					"https://owp.klarna.com/product/640x640/3008346558/Huawei-Mate-50-Pro-256GB.jpg?ph=true"
+				],
+				"featured": false
+			},
+			{
+				"id": 19,
+				"title": "Philips OneBlade Pro",
+				"pris": 399,
+				"stock": 20,
+				"rabat": 5,
+				"beskrivelse": "En alt-i-en trimmer og barbermaskine til skæg og krop. Skånsom og effektiv.",
+				"farver": ["grøn", "sort"],
+				"kategorier": ["philips", "trimmer", "pleje"],
+				"specs": ["90 min brugstid", "USB-opladning"],
+				"billdekilder": [
+					"https://media.elkjop.com/assets/image/dv_web_D180001281155711"
+				],
+				"featured": false
+			},
+			{
+				"id": 20,
+				"title": "Acer Aspire 5 Slim Laptop 15.6''",
+				"pris": 5299,
+				"stock": 9,
+				"rabat": 10,
+				"beskrivelse": "Let og effektiv bærbar til kontorarbejde og studie med stærk batteritid.",
+				"farver": ["sølv", "sort"],
+				"kategorier": ["Bærbar", "office", "PC"],
+				"specs": ["16 GB RAM", "512 GB SSD"],
+				"billdekilder": [
+					"https://m.media-amazon.com/images/I/71vvXGmdKWL.jpg"
+				],
+				"featured": false
+			},
+			{
+				"id": 21,
+				"title": "Sony 55'' 4K HDR Smart TV",
+				"pris": 7999,
+				"stock": 4,
+				"rabat": 20,
+				"beskrivelse": "Elegant og responsivt TV med skarp 4K-opløsning og Android TV-platform.",
+				"farver": ["sort"],
+				"kategorier": ["tv"],
+				"specs": ["4K HDR", "HDMI 2.1", "120Hz"],
+				"billdekilder": [
+					"https://sony.scene7.com/is/image/sonyglobalsolutions/TVFY23_X75WL_Primary-Image-1?$primaryshotPreset$&fmt=png-alpha&wid=515&hei=515"
+				],
+				"featured": true
+			},
+			{
+				"id": 22,
+				"title": "Dell XPS 13 Touch Ultrabook",
+				"pris": 10999,
+				"stock": 2,
+				"rabat": 7,
+				"beskrivelse": "Premium bærbar med touchskærm og høj byggekvalitet. Ideel til professionelle.",
+				"farver": ["hvid", "sølv"],
+				"kategorier": ["Bærbar", "office", "PC"],
+				"specs": ["Intel i7", "16 GB RAM", "1 TB SSD"],
+				"billdekilder": [
+					"https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9350/media-gallery/graphite/notebook-xps-13-9350-t-oled-gy-gallery-5.psd?fmt=pjpg&pscan=auto&scl=1&wid=3509&hei=2071&qlt=100,1&resMode=sharp2&size=3509,2071&chrss=full&imwidth=5000"
+				],
+				"featured": false
+			},
+			{
+				"id": 23,
+				"title": "Razer DeathAdder V2 Gaming Mus",
+				"pris": 599,
+				"stock": 25,
+				"rabat": 15,
+				"beskrivelse": "Ergonomisk mus med høj præcision og RGB-lys – en favorit blandt gamere.",
+				"farver": ["sort", "grøn"],
+				"kategorier": ["Gaming", "PC"],
+				"specs": ["20000 DPI", "Razer Synapse"],
+				"billdekilder": [
+					"https://owp.klarna.com/product/640x640/3108146178/Razer-DeathAdder-V2-X-HyperSpeed-Wireless.jpg?ph=true"
+				],
+				"featured": true
+			},
+			{
+				"id": 24,
+				"title": "Logitech MX Keys Wireless Keyboard",
+				"pris": 899,
+				"stock": 12,
+				"rabat": 5,
+				"beskrivelse": "Stilfuldt tastatur med bagbelysning og lang batteritid – perfekt til kontorarbejde.",
+				"farver": ["grå", "sort"],
+				"kategorier": ["office", "PC"],
+				"specs": ["Bluetooth", "USB-C opladning"],
+				"billdekilder": [
+					"https://cf-images.dustin.eu/cdn-cgi/image/fit=contain,format=auto,quality=75,width=828,fit=contain/image/d200001001510359/logitech-mx-keys.jpg"
+				],
+				"featured": false
+			},
+			{
+				"id": 25,
+				"title": "Philips Sonicare 9900 Prestige",
+				"pris": 1899,
+				"stock": 15,
+				"rabat": 18,
+				"beskrivelse": "Smart eltandbørste med sensorteknologi for optimal mundpleje.",
+				"farver": ["hvid", "guld"],
+				"kategorier": ["philips", "pleje"],
+				"specs": ["Bluetooth", "Tryksensor"],
+				"billdekilder": [
+					"https://images.philips.com/is/image/philipsconsumer/2d66a6219261498aa347afbe0090ab8c?wid=700&hei=700&$pnglarge$"
+				],
+				"featured": false
+			},
+			{
+				"id": 26,
+				"title": "Baseus 65W USB-C GaN Charger",
+				"pris": 299,
+				"stock": 40,
+				"rabat": 0,
+				"beskrivelse": "Kompakt oplader med høj effekt – ideel til både laptops og telefoner.",
+				"farver": ["sort", "hvid"],
+				"kategorier": ["oplaDer", "ledning"],
+				"specs": ["65W GaN", "USB-C + USB-A"],
+				"billdekilder": [
+					"https://powerbanken.dk/wp-content/uploads/2023/01/ccgan2l-b01_baseus-gan-65w-usb-c-pd-qc-4-0-vaegoplader-sort_01.jpg"
+				],
+				"featured": false
+			},
+			{
+				"id": 27,
+				"title": "HP Pavilion Gaming Desktop TG01",
+				"pris": 8499,
+				"stock": 3,
+				"rabat": 10,
+				"beskrivelse": "Klar til gaming med RTX 3060 og Ryzen 5 processor. Hurtig og pålidelig ydeevne.",
+				"farver": ["sort", "grøn"],
+				"kategorier": ["Gaming", "PC"],
+				"specs": ["16 GB RAM", "512 GB SSD", "RTX 3060"],
+				"billdekilder": [
+					"https://m.media-amazon.com/images/I/71rRcUlAUNL._AC_SL1500_.jpg"
+				],
+				"featured": true
+			}
+		
+	
+
 ]

@@ -22,6 +22,20 @@
     height: 40vh;
   }
 
+  .generate img {
+    width: 200px;
+    padding: 11px;
+  }
+
+  .generate {
+    width: 100%;
+    align-items: center;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .carousel__photo {
     opacity: 0;
     position: absolute;

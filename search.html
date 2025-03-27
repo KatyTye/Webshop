@@ -9,19 +9,100 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="css/search.css">
 	<script src="/js/htmlload.js" defer></script>
+	<script src="/js/search.js" defer></script>
 	<script src="/js/main.js" defer></script>
 	<title>VoltageX</title>
 </head>
 
 <body>
 	<header id="header" class="header"></header>
-	
-	<main>
 
+	<main>
+		<form action="search.html" class="search-form" id="search-form">
+			<h2>Filter</h2>
+			<section class="udgiver">
+				<h3>Udgiver</h3>
+				<label for="samsung"><input type="checkbox" name="samsung" id="samsung">Samsung</label>
+				<label for="iphone"> <input type="checkbox" name="iphone" id="iphone">
+					Iphone</label>
+				<label for="philips"> <input type="checkbox" name="philips" id="philips">
+					Philips</label>
+				<label for="asus"> <input type="checkbox" name="asus" id="asus">
+					ASUS</label>
+				<label for="acer"> <input type="checkbox" name="acer" id="acer">
+					Acer</label>
+			</section>
+			<section class="kategorier">
+				<h3>Kategorier</h3>
+				<label for="gaming"> <input type="checkbox" name="gaming" id="gaming">
+					Gaming</label>
+				<label for="grafikkort"> <input type="checkbox" name="grafikkort" id="grafikkort">
+					Grafikkort</label>
+				<label for="telefon"> <input type="checkbox" name="telefon" id="telefon">
+					Telefon</label>
+				<label for="pc"> <input type="checkbox" name="pc" id="pc">
+					PC</label>
+				<label for="bærbar"> <input type="checkbox" name="bærbar" id="bærbar">
+					Bærbar</label>
+				<label for="office"> <input type="checkbox" name="office" id="office">
+					Office</label>
+				<label for="pleje"> <input type="checkbox" name="pleje" id="pleje">
+					Pleje</label>
+				<label for="trimmer"> <input type="checkbox" name="trimmer" id="trimmer">
+					Trimmer</label>
+				<label for="tv"> <input type="checkbox" name="tv" id="tv">
+					TV</label>
+				<label for="oplader"> <input type="checkbox" name="oplader" id="oplader">
+					Oplader</label>
+				<label for="ledning"> <input type="checkbox" name="ledning" id="ledning">
+					Ledninger</label>
+			</section>
+			<section class="price">
+				<h3>Pris</h3>
+				<input type="range" name="pris" id="pris">
+			</section>
+			<section class="specs">
+				<h3>Specifikationer</h3>
+				<select name="specs" id="specs">
+					<option value="none">Igen</option>
+					<option value="30W">30W</option>
+					<option value="8 GB">8 GB</option>
+					<option value="USB-C">USB-C</option>
+					<option value="120Hz">120Hz</option>
+					<option value="128 GB">128 GB</option>
+					<option value="32 GB RAM">32 GB</option>
+					<option value="Vandtæt">Vandtæt</option>
+					<option value="A18-chip">A18-chip</option>
+					<option value="4.700mAh">4.700mAh</option>
+					<option value="XDR-skærm">XDR-skærm</option>
+					<option value="Europæisk">Europæisk</option>
+					<option value="60 minutter">60 minutter</option>
+					<option value="Nikkelbelagte">Nikkelbelagte</option>
+					<option value="tredobbelt kamera">tredobbelt kamera</option>
+					<option value="2-i-1 kamerasystem">2-i-1 kamerasystem</option>
+					<option value="8.800 mikrovibrationer">8.800 mikrovibrationer</option>
+				</select>
+			</section>
+			<section class="farver">
+				<h3>Farver</h3>
+				<label for="sort"> <input type="checkbox" name="sort" id="sort">
+					Sort</label>
+				<label for="hvid"> <input type="checkbox" name="hvid" id="hvid">
+					Hvid</label>
+				<label for="grøn"> <input type="checkbox" name="grøn" id="grøn">
+					Grøn</label>
+			</section>
+			<button>Find</button>
+		</form>
+		<section class="items-holder" id="items-holder">
+			<h1 id="search-output">Dit søgeresultat er kommet op med disse produkter</h1>
+		</section>
 	</main>
 
-	
+
 	<footer class="footer" id="footer"></footer>
 </body>
+
 </html>

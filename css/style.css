@@ -75,6 +75,10 @@ body {
 	display: none;
 }
 
+#header .navBar a, #header .navLinks a {
+	color: white;
+}
+
 /* RETURN */
 
 .header .returnPolicy {
@@ -149,6 +153,26 @@ body {
 	gap: 5px;
 }
 
+.header .navBar .navBtns a:last-of-type {
+	position: relative;
+}
+
+.header .navBar .navBtns a #cart-amount {
+	display: none;
+	background-color: red;
+	min-height: 15px;
+	min-width: 20px;
+	top: -50%;
+	left: -15%;
+	border-radius: 100px;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px;
+	color: white;
+	position: absolute;
+	text-align: center;
+}
+
 #header .navBar #phone-search, #header .navBar #burger-menu {
 	cursor: pointer;
 	background: transparent;
@@ -172,7 +196,7 @@ body {
 /* LINKS */
 
 .header .navLinks {
-	background-color: red;
+	background-color: rgb(80 185 255);
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -225,7 +249,7 @@ body {
 .header #burger {
 	align-items: center;
 	flex-direction: column;
-	background-color: red;
+	background-color: var(--primary-background-color);
 	padding: 20px 0;
 	gap: 25px;
 }

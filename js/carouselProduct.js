@@ -7,6 +7,7 @@ moving = true;
 
 document.addEventListener("DOMContentLoaded", (event) => {
     getItemPictures()
+    
   });
 
 function setInitialClasses() {
