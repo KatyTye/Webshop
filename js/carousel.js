@@ -25,7 +25,7 @@
 
   function moveNext() {
 
-    console.log("called! moveNext")
+    ("called! moveNext")
     if (!moving) {
 
       if (slide === (totalItems - 1)) {
@@ -43,7 +43,7 @@
 
   function movePrev() {
 
-    console.log("called! movePrev")
+    ("called! movePrev")
     if (!moving) {
 
       if (slide === 0) {
@@ -123,14 +123,14 @@
     const featured = data.filter(item => item.featured === true);
     
     featured.forEach((item, index) => {
-      console.log(`ID: ${item.id}, featured is true, billeder: ${item.billdekilder[0]}`);
+      (`ID: ${item.id}, featured is true, billeder: ${item.billdekilder[0]}`);
 	  if (document.getElementById("carousel").innerHTML.includes('<img') && index < 4)
 	  {
-		console.log("Not first img")
-		document.getElementById("carousel").innerHTML += `<a href="produkt.html?show=${item.id}"><img class="carousel__photo" src="${item.billdekilder[0]}"></a>`
+		("Not first img")
+		document.getElementById("carousel").innerHTML += `<a href="produkt.html?show=${item.id}" title="${item.title}"><img class="carousel__photo" src="${item.billdekilder[0]}"></a>`
 	  } else if (index === 0) {
-		console.log("First Img")
-		document.getElementById("carousel").innerHTML += `<a href="produkt.html?show=${item.id}"><img class="carousel__photo initial" src="${item.billdekilder[0]}"></a>`
+		("First Img")
+		document.getElementById("carousel").innerHTML += `<a href="produkt.html?show=${item.id}" title="${item.title}"><img class="carousel__photo initial" src="${item.billdekilder[0]}"></a>`
 	  }
     });
 	document.getElementById("carousel").innerHTML += `<div class="carousel__button--next"></div> <div class="carousel__button--prev"></div>`

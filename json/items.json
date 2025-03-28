@@ -6,8 +6,8 @@
 		"stock": 4,
 		"rabat": 0,
 		"beskrivelse": "Denne Lenovo Flex 5 er er et kompromis mellem bærbar computer og tablet, uden at den går ned på kraft eller bærbarhed. Maskinen er drevet af en Intel Pentium Gold-processor, der gør den i stand til nemt at udføre flere opgaver på én gang.",
-		"farver": ["sort","rød","hvid"],
-        "kategorier": ["Gaming", "PC", "Bærbar"],
+		"farver": ["sort"],
+        "kategorier": ["Gaming", "PC", "Bærbar", "best-seller"],
 		"specs": ["64 GB RAM", "256 GB SSD"],
 		"billdekilder": [
 			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074889&w=1200&q=75","https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074862&w=1200&q=75","https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074864&w=640&q=75", "https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021074865&w=1200&q=75"
@@ -23,7 +23,7 @@
 		"beskrivelse": "NVIDIA Blackwell-arkitektur er forhøjet af forbedret køling og strømforsyning, forstærket med robuste forstærkninger for enestående holdbarhed. Lås, indlæs og dominer med TUF Gaming GeForce RTX™ 5080 OC, designet til at modstå de hårdeste forhold og levere uovertruffen ydeevne.",
 		"farver": ["sort"],
 		"specs": ["32 GB RAM"],
-        "kategorier": ["Gaming", "grafikkort", "PC komponenter"],
+        "kategorier": ["Gaming", "grafikkort", "PC komponenter", "best-seller"],
 		"billdekilder": [
 			"https://www.komplett.dk/img/p/1200/1318012.jpg"
 		],
@@ -33,7 +33,7 @@
 		"id": 3,
 		"title": "Acer Aspire Go 14'' WUXGA",
 		"pris": 2190,
-		"stock": 2,
+		"stock": 0,
 		"rabat": 99,
 		"beskrivelse": "Udstyret med en Intel® N100-processor, 8 GB LPDDR5 RAM og lynhurtig 128 GB UFS-lagring sikrer denne bærbare computer problemfri multitasking og lydhør ydeevne. Nyd desuden endnu mere produktivitet med enestående batterilevetid.",
 		"farver": ["hvid"],
@@ -53,7 +53,7 @@
 		"beskrivelse": "Få en fantastisk tandplejeoplevelse med denne avancerede elektriske tandbørste. Den er designet til voksne og tilbyder en række smarte funktioner, der gør tandbørstningen både effektiv og behagelig. Den stilfulde sorte farve og det ergonomiske design gør, at den også ser godt ud på badeværelset.",
 		"farver": ["sort"],
 		"specs": ["8.800 mikrovibrationer pr. minut"],
-        "kategorier": ["pleje"],
+        "kategorier": ["pleje", "tilbud", "best-seller"],
 		"billdekilder": [
 			"https://www.komplett.dk/img/p/1200/1310243.jpg"
 		],
@@ -93,7 +93,7 @@
 		"id": 7,
 		"title": "Philips OneBlade 360 ansigts (grøn)",
 		"pris": 329,
-		"stock": 666,
+		"stock": 69,
 		"rabat": 0,
 		"beskrivelse": "Philips OneBlade 360 ansigts- og kropstrimmeren QP2834/23 har OneBlade-teknologi med et dobbelt beskyttelsessystem og et langtidsholdbart batteri. OneBlade barberer sig ikke for tæt, så din hud forbliver behagelig.",
 		"farver": ["sort", "grøn"],
@@ -128,7 +128,7 @@
 		"beskrivelse": "Takket være Sandstrøm USB-C til USB-C kablet kan du nemt oplade din telefon, tablet eller endda en bærbar takket være 60 W hurtig opladning, holdbar konstruktion med dobbelt afskærmning og forniklede stik.",
 		"farver": ["hvid"],
 		"specs": ["USB-C til USB-C", "Nikkelbelagte stik", "Understøtter op til 60 W opladning"],
-        "kategorier": ["oplader", "ledning"],
+        "kategorier": ["oplader", "ledning", "tilbud", "best-seller"],
 		"billdekilder": [
 			"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D1800010021562110&w=640&q=75"
 		],
@@ -156,8 +156,8 @@
 		"stock": 2,
 		"rabat": 2,
 		"beskrivelse": "Denne Lenovo Flex 5 er er et kompromis mellem bærbar computer og tablet, uden at den går ned på kraft eller bærbarhed. Maskinen er drevet af en Intel Pentium Gold-processor, der gør den i stand til nemt at udføre flere opgaver på én gang.",
-		"farver": ["sort","rød","hvid"],
-        "kategorier": ["Gaming", "PC", "Bærbar"],
+		"farver": ["sort"],
+        "kategorier": ["Gaming", "PC", "Bærbar", "tilbud"],
 		"specs": ["64 GB RAM", "256 GB SSD"],
 		"billdekilder": [
 			"https://www.komplett.dk/img/p/1200/1317182.jpg",
@@ -175,7 +175,7 @@
 			"rabat": 10,
 			"beskrivelse": "Kraftfuld gaming-laptop med AMD Ryzen 7 og RTX 3070, ideel til krævende spil og multitasking.",
 			"farver": ["sort", "grå"],
-			"kategorier": ["Gaming", "Bærbar", "PC"],
+			"kategorier": ["Gaming", "Bærbar", "PC", "best-seller", "tilbud"],
 			"specs": ["16 GB RAM", "1 TB SSD"],
 			"billdekilder": [
 				"https://www.elgiganten.dk/_next/image?url=https%3A%2F%2Fmedia.elkjop.com%2Fassets%2Fimage%2Fdv_web_D180001002769415&w=1200&q=75",
@@ -191,7 +191,7 @@
 			"rabat": 5,
 			"beskrivelse": "Avanceret trimmer med præcisionsskær og lang batterilevetid. Perfekt til daglig pleje.",
 			"farver": ["sort", "blå"],
-			"kategorier": ["trimmer", "philips", "pleje"],
+			"kategorier": ["trimmer", "philips", "pleje", "tilbud"],
 			"specs": ["PrecisionTrim Tech", "120 min brugstid"],
 			"billdekilder": [
 				"https://images.philips.com/is/image/philipsconsumer/937331bfb71c4d9096c9ae7d00c3c88f?$pnglarge$&wid=1250"
@@ -206,7 +206,7 @@
 			"rabat": 15,
 			"beskrivelse": "Oplev film og serier med fantastisk farve og kontrast på dette store QLED-tv fra Samsung.",
 			"farver": ["sort"],
-			"kategorier": ["tv"],
+			"kategorier": ["tv", "tilbud"],
 			"specs": ["4K UHD", "HDR10+", "Smart Hub"],
 			"billdekilder": [
 				"https://ok7ttytj.photoncache.com/wp-content/uploads/2024/04/181448-3c5334c6ea1ea854f1e0080431450b23d1d99607.jpg"
@@ -236,7 +236,7 @@
 			"rabat": 7,
 			"beskrivelse": "Robust kontor-bærbar til professionelle brugere med høj ydeevne og pålidelighed.",
 			"farver": ["sort"],
-			"kategorier": ["office", "Bærbar", "PC"],
+			"kategorier": ["office", "Bærbar", "PC", "best-seller", "tilbud"],
 			"specs": ["8 GB RAM", "512 GB SSD", "Intel i5"],
 			"billdekilder": [
 				"https://prelovedelectronics.dk/cdn/shop/files/L14.jpg?v=1695653224"
@@ -251,7 +251,7 @@
 				"rabat": 8,
 				"beskrivelse": "Kraftfuldt grafikkort med avanceret køling og ray tracing for en overlegen gamingoplevelse.",
 				"farver": ["sort", "sølv"],
-				"kategorier": ["grafikkort", "Gaming", "PC"],
+				"kategorier": ["grafikkort", "Gaming", "PC", "best-seller", "tilbud"],
 				"specs": ["12 GB GDDR6X", "PCIe 4.0"],
 				"billdekilder": [
 					"https://owp.klarna.com/product/640x640/3009917910/MSI-GeForce-RTX-4070-Ti-Ventus-3X-OC-HDMI-3xDP-12GB.jpg?ph=true"
@@ -266,7 +266,7 @@
 				"rabat": 12,
 				"beskrivelse": "Flagship-telefon med stærkt kamera og imponerende batteritid. Perfekt til powerbrugere.",
 				"farver": ["sort", "sølv"],
-				"kategorier": ["telefon"],
+				"kategorier": ["telefon", "tilbud"],
 				"specs": ["Snapdragon 8+", "256 GB Lager"],
 				"billdekilder": [
 					"https://owp.klarna.com/product/640x640/3008346558/Huawei-Mate-50-Pro-256GB.jpg?ph=true"
@@ -281,7 +281,7 @@
 				"rabat": 5,
 				"beskrivelse": "En alt-i-en trimmer og barbermaskine til skæg og krop. Skånsom og effektiv.",
 				"farver": ["grøn", "sort"],
-				"kategorier": ["philips", "trimmer", "pleje"],
+				"kategorier": ["philips", "trimmer", "pleje", "tilbud"],
 				"specs": ["90 min brugstid", "USB-opladning"],
 				"billdekilder": [
 					"https://media.elkjop.com/assets/image/dv_web_D180001281155711"
@@ -296,7 +296,7 @@
 				"rabat": 10,
 				"beskrivelse": "Let og effektiv bærbar til kontorarbejde og studie med stærk batteritid.",
 				"farver": ["sølv", "sort"],
-				"kategorier": ["Bærbar", "office", "PC"],
+				"kategorier": ["Bærbar", "office", "PC", "tilbud"],
 				"specs": ["16 GB RAM", "512 GB SSD"],
 				"billdekilder": [
 					"https://m.media-amazon.com/images/I/71vvXGmdKWL.jpg"
@@ -311,7 +311,7 @@
 				"rabat": 20,
 				"beskrivelse": "Elegant og responsivt TV med skarp 4K-opløsning og Android TV-platform.",
 				"farver": ["sort"],
-				"kategorier": ["tv"],
+				"kategorier": ["tv", "tilbud", "best-seller"],
 				"specs": ["4K HDR", "HDMI 2.1", "120Hz"],
 				"billdekilder": [
 					"https://sony.scene7.com/is/image/sonyglobalsolutions/TVFY23_X75WL_Primary-Image-1?$primaryshotPreset$&fmt=png-alpha&wid=515&hei=515"
@@ -326,7 +326,7 @@
 				"rabat": 7,
 				"beskrivelse": "Premium bærbar med touchskærm og høj byggekvalitet. Ideel til professionelle.",
 				"farver": ["hvid", "sølv"],
-				"kategorier": ["Bærbar", "office", "PC"],
+				"kategorier": ["Bærbar", "office", "PC", "tilbud"],
 				"specs": ["Intel i7", "16 GB RAM", "1 TB SSD"],
 				"billdekilder": [
 					"https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9350/media-gallery/graphite/notebook-xps-13-9350-t-oled-gy-gallery-5.psd?fmt=pjpg&pscan=auto&scl=1&wid=3509&hei=2071&qlt=100,1&resMode=sharp2&size=3509,2071&chrss=full&imwidth=5000"
@@ -341,7 +341,7 @@
 				"rabat": 15,
 				"beskrivelse": "Ergonomisk mus med høj præcision og RGB-lys – en favorit blandt gamere.",
 				"farver": ["sort", "grøn"],
-				"kategorier": ["Gaming", "PC"],
+				"kategorier": ["Gaming", "PC", "tilbud"],
 				"specs": ["20000 DPI", "Razer Synapse"],
 				"billdekilder": [
 					"https://owp.klarna.com/product/640x640/3108146178/Razer-DeathAdder-V2-X-HyperSpeed-Wireless.jpg?ph=true"
@@ -356,7 +356,7 @@
 				"rabat": 5,
 				"beskrivelse": "Stilfuldt tastatur med bagbelysning og lang batteritid – perfekt til kontorarbejde.",
 				"farver": ["grå", "sort"],
-				"kategorier": ["office", "PC"],
+				"kategorier": ["office", "PC", "tilbud"],
 				"specs": ["Bluetooth", "USB-C opladning"],
 				"billdekilder": [
 					"https://cf-images.dustin.eu/cdn-cgi/image/fit=contain,format=auto,quality=75,width=828,fit=contain/image/d200001001510359/logitech-mx-keys.jpg"
@@ -371,7 +371,7 @@
 				"rabat": 18,
 				"beskrivelse": "Smart eltandbørste med sensorteknologi for optimal mundpleje.",
 				"farver": ["hvid", "guld"],
-				"kategorier": ["philips", "pleje"],
+				"kategorier": ["philips", "pleje", "tilbud"],
 				"specs": ["Bluetooth", "Tryksensor"],
 				"billdekilder": [
 					"https://images.philips.com/is/image/philipsconsumer/2d66a6219261498aa347afbe0090ab8c?wid=700&hei=700&$pnglarge$"
@@ -401,14 +401,11 @@
 				"rabat": 10,
 				"beskrivelse": "Klar til gaming med RTX 3060 og Ryzen 5 processor. Hurtig og pålidelig ydeevne.",
 				"farver": ["sort", "grøn"],
-				"kategorier": ["Gaming", "PC"],
+				"kategorier": ["Gaming", "PC", "tilbud"],
 				"specs": ["16 GB RAM", "512 GB SSD", "RTX 3060"],
 				"billdekilder": [
 					"https://m.media-amazon.com/images/I/71rRcUlAUNL._AC_SL1500_.jpg"
 				],
 				"featured": true
 			}
-		
-	
-
 ]

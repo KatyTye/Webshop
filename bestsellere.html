@@ -9,20 +9,31 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/index.css">
 	<script src="/js/htmlload.js" defer></script>
 	<script src="/js/main.js" defer></script>
+	<script src="/js/loadItemFromCategory.js" defer></script>
 	<link rel="icon" href="/images/icons/logo.png">
-	<title>VoltageX | Kontakt</title>
+	<title>VoltageX | Best-seller</title>
 </head>
 
 <body>
 	<header id="header" class="header"></header>
 	
 	<main>
-
+		<h1>Vores Best sellere:</h1>
+		<ul class="generate" id="best-container">
+			
+		</ul>
 	</main>
 
 	
 	<footer class="footer" id="footer"></footer>
 </body>
+
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        getItembyCategory('best-seller', 'best-container');
+});
+</script>
 </html>

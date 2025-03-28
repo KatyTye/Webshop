@@ -13,91 +13,76 @@
 	<script src="/js/htmlload.js" defer></script>
 	<script src="/js/search.js" defer></script>
 	<script src="/js/main.js" defer></script>
-	<title>VoltageX</title>
+	<link rel="icon" href="/images/icons/logo.png">
+	<title>VoltageX | Search</title>
 </head>
 
 <body>
 	<header id="header" class="header"></header>
 
 	<main>
-		<form action="search.html" class="search-form" id="search-form">
+		<form action="" class="search-form" id="search-form">
 			<h2>Filter</h2>
 			<section class="udgiver">
 				<h3>Udgiver</h3>
-				<label for="samsung"><input type="checkbox" name="samsung" id="samsung">Samsung</label>
-				<label for="iphone"> <input type="checkbox" name="iphone" id="iphone">
+				<label for="samsung"><input type="checkbox" name="samsung" id="samsung" class="forumChangeSubmit">Samsung</label>
+				<label for="iphone"> <input type="checkbox" name="iphone" id="iphone" class="forumChangeSubmit">
 					Iphone</label>
-				<label for="philips"> <input type="checkbox" name="philips" id="philips">
+				<label for="philips"> <input type="checkbox" name="philips" id="philips" class="forumChangeSubmit">
 					Philips</label>
-				<label for="asus"> <input type="checkbox" name="asus" id="asus">
+				<label for="asus"> <input type="checkbox" name="asus" id="asus" class="forumChangeSubmit">
 					ASUS</label>
-				<label for="acer"> <input type="checkbox" name="acer" id="acer">
+				<label for="acer"> <input type="checkbox" name="acer" id="acer" class="forumChangeSubmit">
 					Acer</label>
 			</section>
 			<section class="kategorier">
 				<h3>Kategorier</h3>
-				<label for="gaming"> <input type="checkbox" name="gaming" id="gaming">
+				<label for="tilbud"> <input type="checkbox" name="tilbud" id="tilbud" class="forumChangeSubmit">
+					Tilbud</label>
+				<label for="gaming"> <input type="checkbox" name="gaming" id="gaming" class="forumChangeSubmit">
 					Gaming</label>
-				<label for="grafikkort"> <input type="checkbox" name="grafikkort" id="grafikkort">
+				<label for="grafikkort"> <input type="checkbox" name="grafikkort" id="grafikkort" class="forumChangeSubmit">
 					Grafikkort</label>
-				<label for="telefon"> <input type="checkbox" name="telefon" id="telefon">
+				<label for="telefon"> <input type="checkbox" name="telefon" id="telefon" class="forumChangeSubmit">
 					Telefon</label>
-				<label for="pc"> <input type="checkbox" name="pc" id="pc">
+				<label for="pc"> <input type="checkbox" name="pc" id="pc" class="forumChangeSubmit">
 					PC</label>
-				<label for="bærbar"> <input type="checkbox" name="bærbar" id="bærbar">
+				<label for="bærbar"> <input type="checkbox" name="bærbar" id="bærbar" class="forumChangeSubmit">
 					Bærbar</label>
-				<label for="office"> <input type="checkbox" name="office" id="office">
+				<label for="office"> <input type="checkbox" name="office" id="office" class="forumChangeSubmit">
 					Office</label>
-				<label for="pleje"> <input type="checkbox" name="pleje" id="pleje">
+				<label for="pleje"> <input type="checkbox" name="pleje" id="pleje" class="forumChangeSubmit">
 					Pleje</label>
-				<label for="trimmer"> <input type="checkbox" name="trimmer" id="trimmer">
+				<label for="trimmer"> <input type="checkbox" name="trimmer" id="trimmer" class="forumChangeSubmit">
 					Trimmer</label>
-				<label for="tv"> <input type="checkbox" name="tv" id="tv">
+				<label for="tv"> <input type="checkbox" name="tv" id="tv" class="forumChangeSubmit">
 					TV</label>
-				<label for="oplader"> <input type="checkbox" name="oplader" id="oplader">
+				<label for="oplader"> <input type="checkbox" name="oplader" id="oplader" class="forumChangeSubmit">
 					Oplader</label>
-				<label for="ledning"> <input type="checkbox" name="ledning" id="ledning">
+				<label for="ledning"> <input type="checkbox" name="ledning" id="ledning" class="forumChangeSubmit">
 					Ledninger</label>
 			</section>
 			<section class="price">
-				<h3>Pris</h3>
-				<input type="range" name="pris" id="pris">
-			</section>
-			<section class="specs">
-				<h3>Specifikationer</h3>
-				<select name="specs" id="specs">
-					<option value="none">Igen</option>
-					<option value="30W">30W</option>
-					<option value="8 GB">8 GB</option>
-					<option value="USB-C">USB-C</option>
-					<option value="120Hz">120Hz</option>
-					<option value="128 GB">128 GB</option>
-					<option value="32 GB RAM">32 GB</option>
-					<option value="Vandtæt">Vandtæt</option>
-					<option value="A18-chip">A18-chip</option>
-					<option value="4.700mAh">4.700mAh</option>
-					<option value="XDR-skærm">XDR-skærm</option>
-					<option value="Europæisk">Europæisk</option>
-					<option value="60 minutter">60 minutter</option>
-					<option value="Nikkelbelagte">Nikkelbelagte</option>
-					<option value="tredobbelt kamera">tredobbelt kamera</option>
-					<option value="2-i-1 kamerasystem">2-i-1 kamerasystem</option>
-					<option value="8.800 mikrovibrationer">8.800 mikrovibrationer</option>
-				</select>
+				<h3 id="price-output">Pris (max 50000,- dkk)</h3>
+				<input type="range" name="pris" id="pris" min="0" max="50000" oninput="updateForumPrice(this.value)">
+				<div class="minMax">
+					<p>0</p><p>50000</p>
+				</div>
 			</section>
 			<section class="farver">
 				<h3>Farver</h3>
-				<label for="sort"> <input type="checkbox" name="sort" id="sort">
+				<label for="sort"> <input type="checkbox" name="sort" id="sort" class="forumChangeSubmit">
 					Sort</label>
-				<label for="hvid"> <input type="checkbox" name="hvid" id="hvid">
+				<label for="hvid"> <input type="checkbox" name="hvid" id="hvid" class="forumChangeSubmit">
 					Hvid</label>
-				<label for="grøn"> <input type="checkbox" name="grøn" id="grøn">
+				<label for="grøn"> <input type="checkbox" name="grøn" id="grøn" class="forumChangeSubmit">
 					Grøn</label>
 			</section>
 			<button>Find</button>
 		</form>
 		<section class="items-holder" id="items-holder">
 			<h1 id="search-output">Dit søgeresultat er kommet op med disse produkter</h1>
+			<h3 id="search-fail">Vi kunne ikke finde nogle produkter. 😭</h3>
 		</section>
 	</main>
 

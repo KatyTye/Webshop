@@ -26,7 +26,7 @@ prev.addEventListener('click', movePrev);
 
 function moveNext(ImgKey) {
 
-console.log("called! moveNext")
+("called! moveNext")
 if (!moving) {
 
   if (slide === (totalItems - 1)) {
@@ -44,7 +44,7 @@ if (!moving) {
 
 function movePrev() {
 
-console.log("called! movePrev")
+("called! movePrev")
 if (!moving) {
 
   if (slide === 0) {

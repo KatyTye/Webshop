@@ -5,50 +5,97 @@ let productSpecs = document.getElementById("product-specification")
 let productSpecsREAL = document.getElementById("specs-produkt")
 let productPrice = document.getElementById("pris-product")
 let productImage = document.getElementById("product-image")
-let productBeskrivelse = document.getElementById("beskrivelse")
 let productKategorier = document.getElementById("kategorier")
-
+let farveKategorier = document.getElementById("farver-produkt")
+let productStock = document.getElementById("lager-produkt");
+let productBeskrivelse;
+let currentBeskrivelseHTML = "";
 
 document.addEventListener("DOMContentLoaded", (event) => {
-	let params = new URLSearchParams(document.location.search);
-	if (params) {
-		getItems(params);
+	updateBeskrivelseElement()
+	setTimeout(() => {
+		params = new URLSearchParams(document.location.search);
+		if (params) {
+			getItems(params);
+		}
+	}, 1);
+});
+
+let previousBeskrivelseElement = null;
+
+function updateBeskrivelseElement() {
+	const oldElement = productBeskrivelse;
+
+	if (window.innerWidth < 1200) {
+		productBeskrivelse = document.getElementById("beskrivelseMini");
+	} else {
+		productBeskrivelse = document.getElementById("beskrivelse");
 	}
-  });
+
+	
+	if (oldElement && oldElement !== productBeskrivelse) {
+		oldElement.innerHTML = "";
+	}
+
+	
+	if (productBeskrivelse && currentBeskrivelseHTML) {
+		productBeskrivelse.innerHTML = currentBeskrivelseHTML;
+	}
+
+}
+
+window.addEventListener("resize", updateBeskrivelseElement);
 
 async function getItems(params) {
 	const url = "/json/items.json";
 	loading = true;
-	load = 0
+	load = 0;
 	try {
-	  const response = await fetch(url);
-	  if (!response.ok) {
-		throw new Error(`Response status: ${response.status}`);
-	  }
-	  const json = await response.json();
-	  let id = Number(params.get("show")) -1;
-	  console.log(id)
+		const response = await fetch(url);
+		if (!response.ok) {
+			throw new Error(`Response status: ${response.status}`);
+		}
+		const json = await response.json();
+		let id = Number(params.get("show")) - 1;
 
-	  productName.innerHTML = json[id].title
-	  //productSpecs.innerHTML = json[id].specs
-	  productImage.innerHTML += `<img src="${json[id].billdekilder[0]}">`
-	  productPrice.innerHTML = `${json[id].pris},- dkk`
-	  productBeskrivelse.innerHTML = json[id].beskrivelse
+		productName.innerHTML = json[id].title;
+		productImage.innerHTML += `<img src="${json[id].billdekilder[0]}">`;
+		currentBeskrivelseHTML = `<h4>Beskrivelse</h4>${json[id].beskrivelse}`;
+		productBeskrivelse.innerHTML = currentBeskrivelseHTML;
 
-	  json[id].kategorier.forEach(function (elm) {
-		productKategorier.innerHTML += `<li><a href="search.html?search=${elm}">${elm}</a></li>`
-	  })
+		if (json[id].rabat > 0) {
+			productPrice.style.display = "flex";
+			productPrice.style.justifyContent = "space-between";
+			productPrice.innerHTML = `<span>${Math.round(json[id].pris - ((json[id].pris/100)*json[id].rabat))},- DKK</span><span><span>${json[id].pris},-</span> ${json[id].rabat}% rabat</span>`;
+		} else {
+			productPrice.innerHTML = `${json[id].pris},- dkk`;
+		}
 
-	  json[id].specs.forEach(function (elm) {
-		productSpecsREAL.innerHTML += `<li><a href="search.html?search=${elm}">${elm}</a></li>`
-	  })
+		json[id].farver.forEach(function (elm) {
+			farveKategorier.innerHTML += `<li><a href="search.html?search=${elm}">${elm}</a></li>`;
+		});
 
-      productLoad.innerHTML += `<button onclick="tilføjItem(${id+1}); updateCart();">Læg i indkøbsvogn</button>`
-	  
+		json[id].kategorier.forEach(function (elm) {
+			productKategorier.innerHTML += `<li><a href="search.html?search=${elm}">${elm}</a></li>`;
+		});
+
+		json[id].specs.forEach(function (elm) {
+			productSpecsREAL.innerHTML += `<li><a href="search.html?search=${elm}">${elm}</a></li>`;
+		});
+
+		if (json[id].stock > 0) {
+			productStock.innerHTML = `<span></span> ${json[id].stock} på lager`
+			productLoad.innerHTML += `<button onclick="tilføjItem(${id + 1}); updateCart();">Læg i indkøbsvogn</button>`;
+		} else {
+			productStock.innerHTML = `<span style="background-color: red;"></span> ${json[id].stock} på lager`
+			productLoad.innerHTML += `<button onclick="tilføjItem(${id + 1}); updateCart();" class="noStockButton" disabled>Læg i indkøbsvogn</button>`;
+		}
+
 	} catch (error) {
-	  console.error(error.message);
+		console.error(error.message);
 	}
 }
+
 
 function carouselItems() {
 	fetch('/json/items.json')
@@ -58,7 +105,7 @@ function carouselItems() {
 
     
     featured.forEach((item, index) => {
-      console.log(`ID: ${item.id}, featured is true, billeder: ${item.billdekilder}`);
+      (`ID: ${item.id}, featured is true, billeder: ${item.billdekilder}`);
 		if (item.beskrivelse.includes) {
 			
 		}
@@ -73,7 +120,7 @@ function carouselItems() {
   function getItemPictures() {
 	let params = new URLSearchParams(document.location.search);
 	let show = parseInt(params.get("show"));
-	console.log(show);
+	(show);
   
 	fetch('/json/items.json')
 	  .then(response => response.json())

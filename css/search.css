@@ -15,6 +15,11 @@ main .search-form {
 	padding: 25px;
 }
 
+main .search-form #pris {
+	width: 100%;
+	accent-color: rgb(49, 148, 187);
+}
+
 main .search-form h2 {
 	text-align: center;
 }
@@ -41,6 +46,26 @@ main .search-form button {
 	background-color: rgb(49, 148, 187);
 	width: 100%;
 	color: white;
+}
+
+#search-fail {
+	font-size: 3rem;
+	text-align: center;
+}
+
+.minMax {
+	display: flex;
+}
+
+.minMax p:first-of-type {
+	padding-right: 100px;
+}
+
+main .search-form .specs select {
+	width: 100%;
+	padding: 10px;
+	border: solid 2px rgb(49, 148, 187);
+	border-radius: 100px;
 }
 
 main .search-form button:hover {
@@ -114,3 +139,38 @@ main .items-holder h1 {
 	font-weight: normal;
 	font-style: italic;
 }
+
+.searchItem .rabat-pris {
+	display: none;
+}
+
+@media (max-width: 1200px) {
+	.searchItem .indhold .beskrivelse {
+		height: auto;
+	}
+
+	.searchItem {
+		position: relative;
+		border: solid 2px rgb(49, 148, 187);
+		cursor: pointer;
+		border-radius: 10px;
+		padding: 25px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		gap: 30px;
+		/* overflow: hidden; */
+	}
+
+	main .search-form {
+		width: fit-content;
+	}
+
+	main {
+		align-items: center;
+		padding: 25px;
+		flex-direction: column;
+	}
+  }
+  

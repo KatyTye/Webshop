@@ -31,7 +31,20 @@ figure, nav {
 a {
 	text-decoration: none;
 	color: var(--primary-text-color);
+	
 }
+
+header a:hover, footer a:hover {
+	text-decoration: underline;
+}
+
+#carousel a:hover {
+	color: white;
+	transform: none;
+	box-shadow: none;
+}
+
+
 
 /* --------------- EXTRA --------------- */
 

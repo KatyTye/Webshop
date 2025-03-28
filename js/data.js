@@ -8,21 +8,26 @@ if (kurv == null) {
 	kurv = localStorage.getItem("kurv")
 }
 
-function tilføjItem(itemId) {
-	if (kurv == "") {
-		localStorage.setItem("kurv", itemId)
-		kurv = localStorage.getItem("kurv")
-	} else {
-		let beforeKurv = localStorage.getItem("kurv")
-		localStorage.setItem("kurv", `${beforeKurv}-${itemId}`)
-		kurv = localStorage.getItem("kurv")
+async function tilføjItem(itemId) {
+	const url = "/json/items.json";
+	const response = await fetch(url);
+	const json = await response.json();
+
+	if (json[itemId - 1].stock > 0) {
+		if (kurv == "") {
+			localStorage.setItem("kurv", itemId)
+			kurv = localStorage.getItem("kurv")
+		} else {
+			let beforeKurv = localStorage.getItem("kurv")
+			localStorage.setItem("kurv", `${beforeKurv}-${itemId}`)
+			kurv = localStorage.getItem("kurv")
+		}
+		location.href = "#header"
 	}
-	location.href = "#header"
 }
 
 function fjernFraKurv(input, amount) {
 	cooldown = true
-	console.log("click detected")
 	let split = kurv.split("-")
 	let totalpris = 0
 	let nyKurv = ""
@@ -39,8 +44,6 @@ function fjernFraKurv(input, amount) {
 	}
 
 	localStorage.setItem("kurv", nyKurv)
-
-	console.log(localStorage.getItem("kurv"))
 
 	kurv = localStorage.getItem("kurv")
 

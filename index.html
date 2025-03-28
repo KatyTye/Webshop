@@ -14,13 +14,15 @@
 	<script src="/js/main.js" defer></script>
 	<script src="/js/carousel.js" defer></script>
 	<script src="/js/loadItemFromCategory.js" defer></script>
-	<title>VoltageX</title>
+	<link rel="icon" href="/images/icons/logo.png">
+	<title>VoltageX | Forside</title>
 </head>
 
 <body>
 	<header id="header" class="header"></header>
 	
 	<main>
+		<h2>Vores anbefalinger:</h2>
 		<div id="promo">
 			<div class="carousel-wrapper">
 				<div class="carousel">
@@ -30,15 +32,15 @@
 				</div>
 			  </div>
 		</div>
-		<h4>Vores laptops:</h4>
+		<h2>Vores laptops:</h2>
 		<ul class="generate" id="bærbar-container">
 			
 		</ul>
 
-		<a href="#"><img src="./images/bestsellereBanner.jpg"
+		<a href="bestsellere.html"><img src="https://i.ibb.co/mrT27rQ3/k-bestsellers-q324-stripe-dk.jpg"
 				alt="BEST SELLERE"></a>
 		
-		<h4>Vores Telefoner:</h4>
+		<h2>Vores Telefoner:</h2>
 		<ul class="generate" id="telefon-container">
 			
 		</ul>
@@ -54,4 +56,11 @@
 	
 	<footer class="footer" id="footer"></footer>
 </body>
+
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+  getItembyCategory('Bærbar', 'bærbar-container');
+  getItembyCategory('telefon', 'telefon-container');
+});
+</script>
 </html>

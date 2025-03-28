@@ -45,8 +45,29 @@ main #produkt-indhold {
 	width: 30%;
 }
 
-main #produkt-indhold article #pris-product {
+main #produkt-indhold article #pris-product span:first-of-type {
 	font-weight: bold;
+}
+
+main #produkt-indhold article #pris-product span:last-of-type {
+	font-weight: normal;
+	font-style: italic;
+}
+
+main #produkt-indhold article #pris-product span:last-of-type span {
+	text-decoration: line-through;
+}
+
+#lager-produkt {
+	margin-bottom: 15px;
+}
+
+#lager-produkt span {
+	display: inline-block;
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(10, 255, 20);
 }
 
 main #produkt-indhold button {
@@ -67,4 +88,26 @@ main #produkt-indhold button:hover {
 
 main article ul {
 	list-style-type: disc;
+}
+
+main a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+main a {
+	text-decoration: none;
+	color: var(--primary-text-color);
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	border-radius: 8px;
+	padding: 6px 12px;
+	
+}
+
+main #produkt-indhold .noStockButton {
+	background-color: gray;
+}
+
+main #produkt-indhold .noStockButton:hover {
+	background-color: rgb(97, 97, 97);
 }
